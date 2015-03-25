@@ -6,7 +6,7 @@
 `Bug 1`
 `Story 1`
 
-Launch calendar. This is an updated version of the test
+Launch calendar
 
 ### fxos.func.sanity.launch-contacts
 `Bug 2 `
@@ -40,11 +40,3 @@ ID  | val1 | val2 | val3 |
 --- | ---- | ---- | -----
 id1 | a    | 1    | one one
 id2 | b    | 2    | two two
-
-
-### fxos.func.sanity.new-test
-`Bug 3 `
-`Story 3`
-`Xfail`
-
-This is a new test

@@ -2,18 +2,12 @@
 
 ## Launch suite
 
-### fxos.func.sanity.launch-calendar
-`Bug 1`
-`Story 1`
-
-Launch calendar
-
 ### fxos.func.sanity.launch-contacts
 `Bug 2 `
 `Story 1`
 `Draft`
 
-Launch contacts
+Launch contacts! this is an updated version
 
 ### fxos.func.sanity.launch-music
 `Bug 3 `
@@ -40,3 +34,11 @@ ID  | val1 | val2 | val3 |
 --- | ---- | ---- | -----
 id1 | a    | 1    | one one
 id2 | b    | 2    | two two
+
+
+### fxos.func.sanity.launch-rocketbar
+`Bug 4`
+`Story 3`
+`Draft`
+
+Launch rocketbar

@@ -1,47 +1,37 @@
 # Functional
 
-## Launch suite
+## One suite
 
-### fxos.func.sanity.launch-contacts
+Variable \ Test  | fxos.launch | fxos.launch-activity | fxos.launch-repeated
+--- | ---- | ---- | ----
+Contact | X    | X |
+Music | X    | | X
+SMS | X | X |
+
+### fxos.launch
 `Bug 2 `
 `Story 1`
 `Draft`
 
-Launch contacts! this is an updated version
+Launch the app from the homescreen
 
-### fxos.func.sanity.launch-music
+### fxos.launch-activity
 `Bug 3 `
 `Story 3`
 `Disabled`
 
-Launch music
+Launch the app from another app
 
 
-### fxos.func.sanity.launch-sms-repeated
+### fxos.launch-repeated
 `Bug 3 `
 `Story 3`
 `Xfail`
 
-Launch SMS and measure elapsed time
+Launch the app and measure elapsed time
 Do it again.
 And again.
 
-
-### fxos.func.parameterized.test
-Launch the dialog, insert :val1, :val2, :val3 and hit enter.
-
-ID  | val1 | val2 | val3 |
---- | ---- | ---- | -----
-id1 | a    | 1    | one one
-id2 | b    | 2    | two two
-
-
-### fxos.func.sanity.launch-rocketbar
-`Bug 4`
-`Story 3`
-`Draft`
-
-Launch rocketbar
 
 ### fxos.func.state-diagram
 digraph G {

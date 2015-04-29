@@ -2,69 +2,31 @@
 
 ## One suite
 
-Variable \ Test  | fxos.launch | fxos.launch-activity | fxos.launch-repeated
---- | ---- | ---- | ----
-Contact | X    | X |
-Music | X    | | X
-SMS | X | X |
+| fxos.messages.add-subject | fxos.messages.attach-large-image | fxos.messages.attach-small-image | fxos.messages.send-sms | fxos.messages.send-mms | fxos.messages.receive-sms | fxos.messages.file-previews | fxos.messages.downgrade-from-mms-to-sms | fxos.messages.save-received-attachment | fxos.messages.send-received-message | fxos.messages.received-group-message | fxos.messages.special-characters | fxos.messages.select/delete-messages | fxos.messages.select-delete-threads | fxos.messages.send-sms | fxos.messages.send-mms-to-email | fxos.messages.attach-music-file | fxos.messages.attach-video-file | fxos.messages.attach-file-from-camera | fxos.messages.cut/copy/paste | fxos.messages.send-a-group-message | fxos.messages.add-a-contact-from-contact-app | fxos.messages.forward-sms | fxos.messages.forward-mms | fxos.messages.call-recipient
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---  |
+| TMobile |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Wi-FI |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| No Internet | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X |
+| 2G |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3G |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Multiple SIMS |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Reference Workload |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AT&T | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X |
+| Automatic Download |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Delivery Reports |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Airplane Mode |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Dual SIM priority |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Multiple Recipient Thread |  |  |  | X | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |
 
-### fxos.launch
+### fxos.messages.add-subject
 `Bug 2 `
 `Story 1`
 `Draft`
 
-Launch the app from the homescreen
+Add a subject to the message
 
-### fxos.launch-activity
-`Bug 3 `
-`Story 3`
-`Disabled`
+### fxos.messages.attach-large-image
+`Bug 2 `
+`Story 4`
 
-Launch the app from another app
-
-
-### fxos.launch-repeated
-`Bug 3 `
-`Story 3`
-`Xfail`
-
-Launch the app and measure elapsed time
-Do it again.
-And again.
-
-
-### fxos.func.state-diagram
-digraph G {
-  node [label="" shape=diamond]; choice1;  choice2;  choice3;  choice4;  choice5;
-  node [shape=box];
-  start [shape=doublecircle];
-  end [shape=doublecircle];
-  start -> homescreen;
-  homescreen -> choice1;
-  choice1 -> longPress [label="tap on search bar"];
-  longPress -> choice2;
-  choice2 -> editMode [label="long tap on collection"];
-  editMode -> choice3;
-  choice3 -> homescreen;
-  choice3 -> collectionRemoved [label="tap x on collection icon"];
-  collectionRemoved -> choice3;
-  collectionRemoved -> end;
-  choice3 -> addToCollection [label="drag app to collection"];
-  addToCollection -> choice3;
-  choice3 -> tapNameOfCollection;
-  tapNameOfCollection -> choice4;
-  choice4 -> choice3;
-  choice4 -> editNameOfCollection;
-  editNameOfCollection -> choice5;
-  choice5 -> choice3  [label="cancel or home button"];
-  choice5 -> nameCommits;
-  nameCommits -> choice3
-  homescreen[label="Homescreen"];
-  longPress[label="Long press an icon"];
-  editMode[label="Homescreen edit mode"];
-  collectionRemoved[label="Collection remove"];
-  addToCollection[label="Add to collection"];
-  tapNameOfCollection[label="Tap name of collection"];
-  editNameOfCollection[label="Edit name of collection"];
-  nameCommits[label="Name commits"];
-}
+Add an image of 10MB to the message.
